@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio, resume and biodata website">
+  <title>Home | Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">My<span>Portfolio.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="biodata.html">Bio-data</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+        <h1>Hello, I'm <span>Shashank Patil</span></h1>
+        <h2>Computer Science Engineering Student</h2>
+        <p class="lead">I am a curious learner passionate about technology, problem-solving and building useful digital experiences. Explore my resume and personal profile below.</p>
+        <div class="actions">
+          <a class="btn" href="resume.html">View Resume</a>
+          <a class="btn btn-outline" href="biodata.html">View Bio-data</a>
+        </div>
+      </div>
+      <div class="profile-card">
+       <img src="images/profile.jpeg" alt="Your Profile Photo" class="profile-photo">
+        <h3>Shashank Patil</h3>
+        <p>Computer Science Engineering</p>
+        <span class="status"><i></i> Open to learning opportunities</span>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About This Website</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">01</div><h3>My Resume</h3><p>Academic background, technical skills, projects and career objective in a clear professional format.</p><a href="resume.html" class="text-link">Explore resume →</a></article>
+        <article class="feature-card"><div class="feature-icon">02</div><h3>My Bio-data</h3><p>A snapshot of my personal information, interests, languages and other relevant details.</p><a href="biodata.html" class="text-link">Explore bio-data →</a></article>
+        <article class="feature-card"><div class="feature-icon">03</div><h3>Get in Touch</h3><p>Find my contact information and use the contact form to send a message.</p><a href="contact.html" class="text-link">Contact me →</a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p>© <span id="year"></span> Shashank Patil. Created using HTML, CSS, jQuery and JavaScript.</p></div></footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
