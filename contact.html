@@ -1,29 +1,250 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Personal Portfolio</title><link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shashank Patil</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            width: fit-content;
+            color: #5b5bd6;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: #3939a8;
+            transform: translateX(3px);
+        }
+
+        .social-logo {
+            width: 30px;
+            height: 30px;
+            flex-shrink: 0;
+        }
+
+        .linkedin-logo {
+            background: #0A66C2;
+            color: white;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 21px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        .github-logo {
+            color: #24292f;
+        }
+    </style>
 </head>
+
 <body>
-  <header class="site-header"><nav class="navbar container">
-    <a class="brand" href="index.html">My<span>Portfolio.</span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="resume.html">Resume</a></li><li><a href="biodata.html">Bio-data</a></li><li><a class="active" href="contact.html">Contact</a></li></ul>
-  </nav></header>
-  <main class="container page-wrap">
-    <div class="page-title"><p class="eyebrow">LET'S CONNECT</p><h1>Contact Me</h1><p>Feel free to get in touch for academic or professional opportunities.</p></div>
-    <div class="contact-layout">
-      <section class="feature-card contact-info"><h2>Contact Information</h2><p><strong>Email</strong><br>shashankp24-25@kleit.ac.in</p><p><strong>Phone</strong><br>+91 9353589244</p><p><strong>Location</strong><br>Hubballi, Karnataka, India</p><p class="muted small"></p></section>
-      <section class="paper"><h2>Send a Message</h2>
-        <form id="contactForm" novalidate>
-          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
-          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="name@example.com" required>
-          <label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-          <button class="btn" type="submit">Validate Message</button><p id="formMessage" class="form-message" role="status"></p>
-        </form>
-        <p class="muted small">Demo form: it validates input in your browser; it does not send or store messages.</p>
-      </section>
-    </div>
-  </main>
-  <footer class="footer"><div class="container"><p>© <span id="year"></span> Shashank Patil.</p></div></footer>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="js/script.js"></script>
-</body></html>
+
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a class="brand" href="index.html">
+                My<span>Portfolio.</span>
+            </a>
+
+            <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="biodata.html">Bio-data</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container page-wrap">
+
+        <div class="page-title">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h1>Contact Me</h1>
+            <p>
+                Feel free to get in touch for academic or
+                professional opportunities.
+            </p>
+        </div>
+
+
+        <div class="contact-layout">
+
+            <!-- Contact Information -->
+            <section class="feature-card contact-info">
+
+                <h2>Contact Information</h2>
+
+                <p>
+                    <strong>Email</strong><br>
+                    <a href="mailto:shashankp24-25@kleit.ac.in">
+                        shashankp24-25@kleit.ac.in
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Phone</strong><br>
+                    <a href="tel:+919353589244">
+                        +91 9353589244
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Location</strong><br>
+                    Hubballi, Karnataka, India
+                </p>
+
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+
+                    <!-- LinkedIn -->
+                    <a class="social-link"
+                       href="https://www.linkedin.com/in/shashank-patil-232881315/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <span class="social-logo linkedin-logo">in</span>
+
+                        <span>LinkedIn Profile</span>
+
+                    </a>
+
+
+                    <!-- GitHub -->
+                    <a class="social-link"
+                       href="https://github.com/shashankptl"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <svg class="social-logo github-logo"
+                             viewBox="0 0 24 24"
+                             fill="currentColor"
+                             aria-label="GitHub logo"
+                             role="img">
+
+                            <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.07c-3.1.67-3.76-1.32-3.76-1.32-.5-1.29-1.24-1.63-1.24-1.63-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.92.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08V22c0 .29.2.63.76.53A11.1 11.1 0 0 0 12 .9Z"/>
+
+                        </svg>
+
+                        <span>GitHub Profile</span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Contact Form -->
+            <section class="paper">
+
+                <h2>Send a Message</h2>
+
+                <form id="contactForm" novalidate>
+
+                    <label for="name">Your name</label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+
+                    <label for="email">Email address</label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="name@example.com"
+                        required
+                    >
+
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+
+                    <button class="btn" type="submit">
+                        Validate Message
+                    </button>
+
+                    <p
+                        id="formMessage"
+                        class="form-message"
+                        role="status">
+                    </p>
+
+                </form>
+
+                <p class="muted small">
+                    Demo form: it validates input in your browser;
+                    it does not send or store messages.
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+            <p>
+                © <span id="year"></span> Shashank Patil.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
